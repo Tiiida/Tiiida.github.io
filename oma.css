@@ -26,6 +26,10 @@ body {
     -webkit-text-fill-color: black;
   }
 
+  .card4 {
+    -webkit-text-fill-color: gray;
+  }
+
   .jumbotron {
     -webkit-text-fill-color: rgb(214, 201, 241);
     background-color: rgb(20, 0, 51, 0.5);
