@@ -1,0 +1,72 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+body {
+    background-image: url("revontulet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+}
+
+.item1 {
+  font-size: 40px;
+    font-family: monospace;
+    width: 80%;
+    -webkit-text-fill-color: beige;
+}
+
+.item2 {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    background-color: rgba(31, 31, 32, 0.5);
+    -webkit-text-fill-color: beige;
+
+}
+
+.item3 {
+  font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    background-color: rgba(31, 31, 32, 0.5);
+    -webkit-text-fill-color: beige;
+}
+
+.item4 {
+  font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    background-color: rgba(31, 31, 32, 0.5);
+    -webkit-text-fill-color: beige;
+}
+
+.item5 {
+  font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    background-color: rgba(31, 31, 32, 0.5);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'menu main right'
+      'menu footer right';
+    grid-gap: 20px;
+    /* background-color: transparent; */
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    font-size: 15px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+  }
+
